@@ -9,6 +9,7 @@
     pkgs.yarn
     pkgs.nodePackages.pnpm
     pkgs.bun
+    pkgs.xdg-utils
   ];
   # Sets environment variables in the workspace
   env = {};
@@ -21,6 +22,9 @@
       # Runs when a workspace is first created with this `dev.nix` file
       onCreate = {
         pnpm-install = "pnpm install";
+      };
+      onStart = {
+        pnpm-convex = "pnpm exec convex dev";
       };
       # To run something each time the environment is rebuilt, use the `onStart` hook
     };
