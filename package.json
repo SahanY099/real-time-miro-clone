@@ -16,7 +16,7 @@
     "clsx": "^2.1.0",
     "convex": "^1.11.2",
     "lucide-react": "^0.372.0",
-    "next": "14.2.2",
+    "next": "14.2.30",
     "react": "^18",
     "react-dom": "^18",
     "tailwind-merge": "^2.3.0",
